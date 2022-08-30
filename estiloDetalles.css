@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.principal{
+    padding: 1em;
+    overflow: hidden;
+}
+
+.productos{
+    margin: 1em;
+    padding: 1em;
+    color: #ffffff;
+    float: left;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+.descripcion{
+    background-color: #b361a3;
+}
+
+h1{
+    text-align: center;
+    background-color: #b361a3;
+    color: black;
+    padding: 20px;
+}
+h1 img{
+    width: 50px;
+    height: 50px;
+}
