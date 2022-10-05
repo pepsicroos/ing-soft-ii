@@ -18,7 +18,7 @@ if($_SESSION['nombre'] == ''){
       <ul>
         <li><a href="AdministradoresLista.php">Administradores</a></li>
         <li><a href="ProductosLista.php">Productos</a></li>
-        <li><a href="BannersLista.php">Baners</a></li>
+        <li><a href="BannersLista.php">Pedidos</a></li>
         <li><a href="PedidosLista.php">Pedidos</a></li>
       </ul>
     </nav>

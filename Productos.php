@@ -13,8 +13,33 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="estiloIndex.css">
+	<script src="jquery.js"></script>
 	<title>Productos</title>
+	<script>
+
+		function carrito(id){
+			var cantidad = $('#cantidad'+id).val();
+			//alert(id);
+			//alert(cantidad);
+			$.ajax({
+	          url      : 'carritoSalva.php',
+	          type     : 'post',
+	          dataType : 'text',
+	          data     : 'id='+id+'&cantidad='+cantidad,
+	          success  : function(res){
+				  alert(res);
+				  if(res == 1){
+	              alert("Agregado");
+				  }
+	            },error : function(){
+	              alert('No se agrego el producto');
+	            }
+			});
+		}
+	</script>
+
 </head>
+
 <body>
 	<h1><img src="NUBE_MUJER.PNG" align="middle">NUBE MUJER</h1>
 	<h3><a href="Index.php">Regresar</a></h3>
@@ -41,4 +66,5 @@
 	</div>
 
 </body>
+
 </html>
