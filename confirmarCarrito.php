@@ -8,6 +8,6 @@
 	$sql = "UPDATE pedidos SET status = 1 WHERE id = '$id_pedido'";
 	$res = $con->query($sql);
 
-header('Location:Index.php');
+header('Location:pago.php');
 
 ?>
